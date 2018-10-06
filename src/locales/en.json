@@ -1,0 +1,21 @@
+{
+  "labelTotalExpense": "Total Expense",
+  "labelSummary": "Summary",
+  "labelSetting": "Setting",
+  
+  "labelCurrency": "Currency",
+
+  "labelMainAccount": "Main Account",
+  "labelAccountName": "Account Name",
+  "labelAccount": "Account",
+  "labelCreateAccount": "Create Account",
+  "labelAccountDetails": "Account Details",
+  "labelAccountNamePlaceholder": "e.g. John, HR Department..",
+  "labelCreateAt": "Created at",
+  "labelSave": "Save",
+  "labelCancel": "Cancel",
+
+  "errorMessageRequireAccountName": "Account Name is required",
+  "errorMessageRequireCurrency": "Currency is required",
+  "errorMessageValidationError": "Validation Error"
+}
