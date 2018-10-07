@@ -5,6 +5,13 @@
   
   "labelCurrency": "Currency",
 
+  "labelRemaining": "Remaining",
+  "labelBudget": "Budget",
+  "labelBalance": "Balance",
+  "labelRecord": "Record",
+  "labelExpense": "Expense",
+  "labelIncome": "Income",
+  "labelCurrentBalance": "Currenct Balance",
   "labelMainAccount": "Main Account",
   "labelAccountName": "Account Name",
   "labelAccount": "Account",
@@ -14,8 +21,16 @@
   "labelCreateAt": "Created at",
   "labelSave": "Save",
   "labelCancel": "Cancel",
+  "labelSelectDate": "Select Date",
+  "labelConfirm": "Confirm",
+  "labelDate": "Date",
+  "labelDescription": "Description",
+  "labelSaveAndQuit": "Save and Quit",
 
   "errorMessageRequireAccountName": "Account Name is required",
   "errorMessageRequireCurrency": "Currency is required",
+  "errorMessageRequireDate": "Date is required",
+  "errorMessageRequireAccount": "Account is required",
+  "errorMessageRequireDescription": "Description is required",
   "errorMessageValidationError": "Validation Error"
 }

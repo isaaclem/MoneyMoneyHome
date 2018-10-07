@@ -1,13 +1,14 @@
 import React from 'react';
-import { createBottomTabNavigator, createStackNavigator, StackActions } from 'react-navigation';
-import { Icon, Button, View } from 'native-base';
+import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
+import { Icon, Button } from 'native-base';
 
 import Strings from './Strings';
 import { 
   SummaryScreen,
   SettingScreen,
   AccountCreationScreen,
-  AccountListScreen
+  AccountListScreen,
+  RecordDetailsScreen
 } from './screens';
 
 const PRIMARY_COLOR = '#50565B';
@@ -29,6 +30,23 @@ const MainNavigator = createBottomTabNavigator({
             navigationOptions: {
               ...STANDARD_NAVIGATION_OPTION,
               title: Strings.labelSummary
+            }
+          },
+          recordDetails: {
+            screen: RecordDetailsScreen,
+            navigationOptions: ({ navigation }) => {
+              return {
+                ...STANDARD_NAVIGATION_OPTION,
+                title: Strings.labelRecord,
+                headerLeft: (
+                  <Button
+                    transparent
+                    onPress={() => navigation.goBack()}
+                  >
+                    <Icon name='chevron-left' type='Entypo' style={{ color: 'white', fontSize: 30 }} />
+                  </Button>
+                )
+              };
             }
           }
         }, {
@@ -69,7 +87,7 @@ const MainNavigator = createBottomTabNavigator({
                     transparent
                     onPress={() => navigation.goBack()}
                   >
-                    <Icon name='chevron-left' type='Entypo' style={{ color: 'white' }} />
+                    <Icon name='chevron-left' type='Entypo' style={{ color: 'white', fontSize: 30 }} />
                   </Button>
                 )
               };

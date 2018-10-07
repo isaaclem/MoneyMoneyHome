@@ -6,7 +6,8 @@
     "no-mixed-operators": "off",
     "global-require": "off",
     "camelcase": "off",
-    "no-return-assign": "off"
+    "no-return-assign": "off",
+    "no-param-reassign": "off"
   },
   "globals": {
     "navigator": false

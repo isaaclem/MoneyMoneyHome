@@ -611,6 +611,11 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@ercpereda/react-native-accordion@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@ercpereda/react-native-accordion/-/react-native-accordion-2.0.6.tgz#a4d16c3861fd9b4adf5e6e1e0b46b2714b9f7dc6"
+  integrity sha512-1WmOP2CefcN1QD+18HQLlAepk6bLIQkPmoDKrIcZOaNL3U/qg3VY7JfY3V0AKMXpAXKcZembt9PDQYmJzBqp3Q==
+
 "@redux-offline/redux-offline@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@redux-offline/redux-offline/-/redux-offline-2.4.0.tgz#7a9ca81c34033b2814c5faef9033261178b8d122"
@@ -4745,7 +4750,7 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-moment@^2.22.2:
+moment@^2.22.0, moment@^2.22.2:
   version "2.22.2"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
   integrity sha1-PCV/mDn8DpP/UxSWMiOeuQeD/2Y=
@@ -5558,6 +5563,13 @@ react-native-animatable@^1.2.4:
   integrity sha512-GGYEYvderfzPZcPnw7xov4nlRmi9d6oqcIzx0fGkUUsMshOQEtq5IEzFp3np0uTB9n8/gZIZcdbUPggVlVydMg==
   dependencies:
     prop-types "^15.5.10"
+
+react-native-datepicker@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/react-native-datepicker/-/react-native-datepicker-1.7.2.tgz#58d0822591a0ac9b32aba082650222a0ee29669d"
+  integrity sha1-WNCCJZGgrJsyq6CCZQIioO4pZp0=
+  dependencies:
+    moment "^2.22.0"
 
 react-native-dismiss-keyboard@1.0.0:
   version "1.0.0"

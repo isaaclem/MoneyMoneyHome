@@ -8,11 +8,13 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
+    "@ercpereda/react-native-accordion": "^2.0.6",
     "@redux-offline/redux-offline": "^2.4.0",
     "moment": "^2.22.2",
     "native-base": "^2.8.1",
     "react": "16.5.0",
     "react-native": "0.57.1",
+    "react-native-datepicker": "^1.7.2",
     "react-native-hr-plus": "^1.0.6",
     "react-native-localization": "^2.0.1",
     "react-native-modal": "^6.5.0",

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { ImageBackground, View, Text, StyleSheet, Platform, TouchableOpacity } from 'react-native';
+import { ImageBackground, View, Text, StyleSheet, Platform } from 'react-native';
 import { connect } from 'react-redux';
 import { Container, Icon, Item, Label, Input, Content, Picker, Button } from 'native-base';
 import Hr from 'react-native-hr-plus';
-import Modal from 'react-native-modal';
 
 import currencies from '../../Currencies.json';
 import Strings from '../../Strings';
@@ -74,7 +73,7 @@ class AccountCreationScreen extends Component {
               textStyle={{ color: 'grey' }}
             >
               {
-                Object.entries(currencies).map(row => <Item value={row[0]} label={row[1]} key={row[0]} />)
+                Object.entries(currencies).map(row => <Item value={row[0]} label={`${row[1].name} (${row[1].symbol})`} key={row[0]} />)
               }
             </Picker>
             {
@@ -102,7 +101,6 @@ class AccountCreationScreen extends Component {
         </View>
         <AlertModal
           isVisible={this.state.showErrorModal}
-          // onModalHide={() => this.onLogoutModalHide()}
           alertTitle={Strings.errorMessageValidationError}
           alertMessage={this.state.errorMessage}
           onOkButtonPress={() => this.toggleErrorModal()}
